@@ -4,7 +4,7 @@
   "keywords": [
     "whatsapp bot"
   ],
-  "repository": "https://github.com/A-d-i-t-h-y-a-n/hermit-md",
+  "repository": "https://github.com/QUEEN-NISHIMIYA/hermit-md",
   "stack": "container",
   "env": {
     "SESSION_ID": {
@@ -15,17 +15,17 @@
     "SUDO": {
       "description": "owner number of the bot",
       "required": true,
-      "value": "null"
+      "value": "918593848438"
     },
     "MODE": {
       "description": "mode public or private",
       "required": true,
-      "value": "private"
+      "value": "public"
     },
     "ALWAYS_ONLINE": {
       "description": "show bot number last seen as online",
       "required": false,
-      "value": "false"
+      "value": "true"
     },
     "HEROKU_APP_NAME": {
       "description": "Heroku app name, same as above entered",
@@ -48,17 +48,17 @@
     "BOT_INFO": {
       "description": "botname;ownername;ownernumber;image url",
       "required": true,
-      "value": "ʜᴇʀᴍɪᴛ;ᴀᴅɪᴛʜyᴀɴ;972528277755;https://i.imgur.com/pbNNWfM.jpeg"
+      "value": "𝘲ꪊꫀꫀꪀ ꫀℓɪ𝘴α;ɪɀꪊᴍιꫀ ᥊ꫀꪀρꪖι;918593848438;te.legra.ph/file/09ea704fafa1008c6146d.jpg"
     },
     "STICKER_DATA": {
       "description": "sticker package name",
       "required": true,
-      "value": "ʜᴇʀᴍɪᴛ;ᴀᴅɪᴛʜyᴀɴ"
+      "value": "ɪɀꪊᴍιꫀ;᥊ꫀꪀρꪖι"
     },
     "AUDIO_DATA": {
       "description": "audio package name",
       "required": true,
-      "value": "ʜᴇʀᴍɪᴛ;ᴀᴅɪᴛʜyᴀɴ;https://i.imgur.com/pbNNWfM.jpeg"
+      "value": "ɪɀꪊᴍιꫀ;918593848438;te.legra.ph/file/09ea704fafa1008c6146d.jpg"
     },
     "READ_MSG": {
       "description": "Read all messages",
