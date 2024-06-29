@@ -39,7 +39,7 @@ Function({
   try {
   const media = await downloadYouTubeAudio(ytId[1]);
   if (media.content_length >= 10485760) return await send(message, await fs.readFileSync(media.file), ytId[1]);
-  const writer = await addAudioMetaData(await toAudio(await fs.readFileSync(media.file), 'mp4'), media.thumb, media.title, `hermit-md`, 'Hermit Official');
+  const writer = await addAudioMetaData(await toAudio(await fs.readFileSync(media.file), 'mp4'), media.thumb, media.title, `izumie`, 'xenpai');
   return await send(message, writer, ytId[1]);
   } catch {
   const response = await getJson('https://api.adithyan.xyz/ytaudio?id=' + ytId[1]);
@@ -47,7 +47,7 @@ Function({
   if (response.content_length >= 10485760) return await client.sendMessage(message.jid, { audio: {url: response.result }, mimetype: 'audio/mpeg', ptt: false }, { quoted: message.data });
   const buffer = await getBuffer(response.result);
   await fs.writeFileSync('./' + response.file, buffer);
-  const writer = await addAudioMetaData(await toAudio(await fs.readFileSync('./' + response.file), 'mp4'), response.thumb, response.title, `hermit-md`, 'Hermit Official');
+  const writer = await addAudioMetaData(await toAudio(await fs.readFileSync('./' + response.file), 'mp4'), response.thumb, response.title, `izumie`, 'xenpai');
   return await send(message, writer, ytId[1]);
   }
   } else if (text.includes('Search results') && text.includes('Format: video')) {
@@ -84,7 +84,7 @@ Function({
   try {
   const media = await downloadYouTubeAudio(id[1]);
   if (media.content_length >= 10485760) return await send(message, await fs.readFileSync(media.file), id[1]);
-  const writer = await addAudioMetaData(await toAudio(await fs.readFileSync(media.file), 'mp4'), media.thumb, media.title, `hermit-md`, 'Hermit Official');
+  const writer = await addAudioMetaData(await toAudio(await fs.readFileSync(media.file), 'mp4'), media.thumb, media.title, `izumie`, 'xenpai');
   return await send(message, writer, id[1]);
   } catch {
   const response = await getJson('https://api.adithyan.xyz/ytaudio?id=' + id[1]);
@@ -92,7 +92,7 @@ Function({
   if (response.content_length >= 10485760) return await client.sendMessage(message.jid, { audio: {url: response.result }, mimetype: 'audio/mpeg', ptt: false }, { quoted: message.data });
   const buffer = await getBuffer(response.result);
   await fs.writeFileSync('./' + response.file, buffer);
-  const writer = await addAudioMetaData(await toAudio(await fs.readFileSync('./' + response.file), 'mp4'), response.thumb, response.title, `hermit-md`, 'Hermit Official');
+  const writer = await addAudioMetaData(await toAudio(await fs.readFileSync('./' + response.file), 'mp4'), response.thumb, response.title, `izumie`, 'xenpai');
   return await send(message, writer, id[1]);
   }
   }
